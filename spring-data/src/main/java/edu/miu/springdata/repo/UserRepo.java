@@ -1,2 +1,7 @@
-package edu.miu.springdata.repo;public interface UserRepo {
+package edu.miu.springdata.repo;
+
+import edu.miu.springdata.entity.User;
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserRepo extends CrudRepository<User, Integer> {
 }
